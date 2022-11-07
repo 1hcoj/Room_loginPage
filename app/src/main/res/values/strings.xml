@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Study Record</string>
+    <string name="HomeMessage">공부 기록</string>
+    <string name="pwdHint">비밀번호 입력하세요</string>
+    <string name="IdHint">Id</string>
+    <string name="keepLoginMsg">로그인 상태 유지</string>
+    <string name="LoginButtonMsg">로그인</string>
+    <string name="findPasswordMsg">비밀번호 찾기</string>
+    <string name="findIdMsg">아이디 찾기</string>
+    <string name="signUpMsg">회원가입</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="idTextMsg">아이디</string>
+    <string name="pwdTextMsg">비밀번호</string>
+    <string name="checkPwdText">비밀번호 재확인</string>
+    <string name="nameText">닉네임</string>
+    <string name="signUpBtnMsg">가입하기</string>
+</resources>
