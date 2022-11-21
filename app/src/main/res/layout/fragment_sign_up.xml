@@ -27,6 +27,7 @@
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
+        android:baselineAligned="false"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,23 +44,46 @@
             android:textColor="#090909"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/signIdEditText"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/signIdEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="@string/IdHint"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/idCheckButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="#05BC0C"
+                android:text="@string/idCheck_msg" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/idInforTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:ems="10"
-            android:hint="@string/IdHint"
-            android:inputType="textPersonName"
-            android:minHeight="48dp" />
+            android:layout_marginEnd="16dp" />
 
         <TextView
             android:id="@+id/pwdTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:text="@string/pwdTextMsg"
             android:textColor="#070707"
@@ -77,11 +101,17 @@
             android:minHeight="48dp" />
 
         <TextView
+            android:id="@+id/pwdInforTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
             android:id="@+id/checkPwdTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:text="@string/checkPwdText"
             android:textColor="#090909"
@@ -99,11 +129,17 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
+            android:id="@+id/pwdCheckInforTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
             android:id="@+id/nickTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:text="@string/nameText"
             android:textColor="#090909"
@@ -120,6 +156,13 @@
             android:inputType="textPersonName"
             android:minHeight="48dp" />
 
+        <TextView
+            android:id="@+id/nickInforTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
         <Button
             android:id="@+id/signUpButton"
             android:layout_width="match_parent"
@@ -128,6 +171,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginEnd="16dp"
             android:backgroundTint="#05BC0C"
+            android:enabled="true"
             android:text="@string/signUpBtnMsg"
             android:textSize="16sp"
             android:textStyle="bold" />

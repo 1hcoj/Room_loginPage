@@ -1,18 +1,36 @@
 <resources>
     <string name="app_name">Study Record</string>
     <string name="HomeMessage">공부 기록</string>
-    <string name="pwdHint">비밀번호 입력하세요</string>
-    <string name="IdHint">Id</string>
+    <string name="pwdHint">영문 소문자,숫자조합 8자리 이상</string>
+    <string name="IdHint">영문 소문자,숫자조합 6자리 이상</string>
     <string name="keepLoginMsg">로그인 상태 유지</string>
     <string name="LoginButtonMsg">로그인</string>
     <string name="findPasswordMsg">비밀번호 찾기</string>
     <string name="findIdMsg">아이디 찾기</string>
     <string name="signUpMsg">회원가입</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="idTextMsg">아이디</string>
     <string name="pwdTextMsg">비밀번호</string>
     <string name="checkPwdText">비밀번호 재확인</string>
     <string name="nameText">닉네임</string>
     <string name="signUpBtnMsg">가입하기</string>
+    <string name="idCheck_msg">중복체크</string>
+
+    <string-array name="error_msg">
+        <item>아이디는 영문 소문자,숫자 조합 6자리 이상입니다!!</item>
+        <item>이미 존재하는 아이디입니다!!</item>
+        <item>필수 입력 정보입니다!!</item>
+        <item>비밀번호는 영문,숫자 조합 8자리 이상입니다!!</item>
+        <item>입력하신 비밀번호와 다릅니다!!</item>
+        <item>비밀번호가 틀렸습니다!!</item>
+        <item>이미 존재하는 닉네임입니다!!</item>
+        <item>존재하지 않는 아이디입니다!!</item>
+    </string-array>
+
+    <string-array name="success_msg">
+        <item>사용 가능한 아이디입니다!!</item>
+        <item>사용 가능한 비밀번호입니다!!</item>
+        <item>입력하신 비밀번호와 일치합니다!!</item>
+        <item>사용 가능한 닉네임입니다!!</item>
+    </string-array>
 </resources>
